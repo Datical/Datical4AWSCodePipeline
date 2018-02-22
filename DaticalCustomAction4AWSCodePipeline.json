@@ -1,10 +1,10 @@
 {
   "category": "Deploy",
-  "provider": "Datical Database Deploy",
-  "version": "1",
+  "provider": "Datical",
+  "version": "3",
   "settings": {
-    "entityUrlTemplate": "{Config:Datical Sever URL}",
-    "executionUrlTemplate": "{Config:Datical Sever URL}"
+    "entityUrlTemplate": "{Config:Datical Sever Hostname}",
+    "executionUrlTemplate": "{Config:Datical Sever Hostname}"
   },
   "configurationProperties": [
     {
