@@ -1,0 +1,69 @@
+{
+  "category": "Deploy",
+  "provider": "Datical Database Deploy",
+  "version": "1",
+  "settings": {
+    "entityUrlTemplate": "{Config:Datical Sever URL}",
+    "executionUrlTemplate": "{Config:Datical Sever URL}"
+  },
+  "configurationProperties": [
+    {
+      "secret": false,
+      "required": true,
+      "name": "Datical Sever Hostname",
+      "key": true,
+      "description": "The hostname where Datical Server is running.",
+	  "queryable": true
+	},
+    {
+      "secret": false,
+      "required": true,
+      "name": "Datical Username",
+      "key": true,
+      "description": "Username of the Datical user that has Datical Deploy permission for the Project and Stage."
+    },
+    {
+      "secret": true,
+      "required": true,
+      "name": "Datical Password",
+      "key": true,
+      "description": "Password of the Datical user listed above."
+    },
+    {
+      "secret": false,
+      "required": true,
+      "name": "Datical Project ID",
+      "key": true,
+      "description": "The Datical Project ID."
+    },
+    {
+      "secret": false,
+      "required": true,
+      "name": "Datical Step ID",
+      "key": true,
+      "description": "The Datical Step ID."
+    },
+    {
+      "secret": false,
+      "required": false,
+      "name": "Datical Label",
+      "key": true,
+      "description": "The Label you wish to use for your Datical deployment. (Optional)"
+    },
+    {
+      "secret": false,
+      "required": false,
+      "name": "Datical Context",
+      "key": true,
+      "description": "The Context you wish to use for your Datical deployment. (Optional)"
+    }
+  ],
+  "inputArtifactDetails": {
+    "maximumCount": 1,
+    "minimumCount": 0
+  },
+  "outputArtifactDetails": {
+    "maximumCount": 1,
+    "minimumCount": 0
+  }
+}
