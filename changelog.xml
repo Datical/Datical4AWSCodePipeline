@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:appdba="http://www.datical.net/xml/ns/appdba" xmlns:datical="http://www.datical.net/xml/ns/datical" xmlns:storedlogic="http://www.datical.net/xml/ns/storedlogic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" logicalFilePath="Changelog/changelog.xml" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd http://www.datical.net/xml/ns/storedlogic http://www.datical.net/xml/ns/storedlogic-1.0.xsd http://www.datical.net/xml/ns/appdba http://www.datical.net/xml/ns/appdba-1.0.xsd">
+    <changeSet author="r2" created="Wed Feb 14 13:48:26 CST 2018" id="1">
+        <createTable tableName="t_sample_table">
+            <column name="foo" type="varchar2(256)">
+                <constraints nullable="true" primaryKey="false" unique="false"/>
+            </column>
+            <column name="bar" type="varchar2(256)">
+                <constraints nullable="true" primaryKey="false" unique="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
